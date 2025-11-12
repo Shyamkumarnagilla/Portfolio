@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- REMIXICON & CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Shyam's Portfolio</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-list grid">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="ri-home-2-line nav-icon"></i>
+            <h3 class="nav-name">Home</h3>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            <i class="ri-user-line nav-icon"></i>
+            <h3 class="nav-name">About</h3>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link active-link">
+            <i class="ri-mail-open-line nav-icon"></i>
+            <h3 class="nav-name">Contact</h3>
+          </a>
+        </li>
+
+      </ul>
+
+      <i class="ri-close-line nav-close" id="nav-close"></i>
+    </div>
+
+    <div class="nav-toggle" id="nav-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+  </nav>
+
+  <main class="main">
+    <!-- Contact -->
+    <section class="contact section">
+      <h2 class="section-title">Contact <span>Me</span></h2>
+
+      <div class="contact-container container grid">
+        <div class="contact-content grid">
+          <div class="contact-social-icons">
+            <a href="https://www.linkedin.com/in/nagilla-shyam" target="_blank" rel="noopener" title="LinkedIn"
+              style="color: inherit;">
+              <i class="ri-linkedin-fill" style="font-size: 2rem;"></i>
+            </a>
+            <a href="https://github.com/Shyamkumarnagilla" target="_blank" rel="noopener" title="GitHub"
+              style="color: inherit;">
+              <i class="ri-github-fill" style="font-size: 2rem;"></i>
+            </a>
+            <a href="mailto:nagillashyamkumar7@gmail.com" title="Email" style="color: inherit;">
+              <i class="ri-mail-line" style="font-size: 2rem;"></i>
+            </a>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-map-2-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Address</h3>
+              <p class="contact-data">Hyderabad, Telangana, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-user-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Open to Work</h3>
+              <p class="contact-data">Available Right Now</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-phone-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Phone</h3>
+              <p class="contact-data">+919705444523</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact-form grid" id="contact-form">
+          <div class="contact-group grid">
+            <div class="contact-form-div">
+              <lable for="" class="contact-form-label">
+                Your Full Name <b>*</b>
+              </lable>
+
+              <input type="text" class="contact-form-input" name="name" id="contact-name" />
+            </div>
+
+            <div class="contact-form-div">
+              <lable for="" class="contact-form-label">
+                Your Email Address <b>*</b>
+              </lable>
+
+              <input type="email" class="contact-form-input" name="email" id="contact-email" />
+            </div>
+          </div>
+
+          <div class="contact-form-div">
+            <lable for="" class="contact-form-label">
+              Your Subject <b>*</b>
+            </lable>
+
+            <input type="text" class="contact-form-input" name="subject" id="contact-subject" />
+          </div>
+
+          <div class="contact-form-div">
+            <lable for="" class="contact-form-label">
+              Your Message <b>*</b>
+            </lable>
+
+            <textarea class="contact-form-input contact-form-area" name="message" id="contact-message"></textarea>
+          </div>
+
+          <button class="button contact-button">
+            Send Message
+            <span class="button-icon">
+              <i class="ri-send-plane-2-line"></i>
+            </span>
+          </button>
+
+          <p class="contact-message" id="message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-main">
+        <span class="footer-copy">© 2025 Shyam Kumar Nagilla.<span class="footer-rights"> All rights are
+            reserved.</span></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="about.html">About Me</a>
+        <span>|</span>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- Style Switcher -->
+  <div class="style-switcher" id="style-switcher">
+    <div class="switcher-toggler" id="switcher-toggler">
+      <i class="ri-settings-4-line"></i>
+    </div>
+
+    <div class="theme-toggler" id="theme-toggler">
+      <i class="ri-sun-line" id="theme-icon"></i>
+    </div>
+
+    <h3 class="switcher-title">Style Switcher</h3>
+
+    <div class="switcher-items grid">
+      <img src="img/orange.png" alt="" class="theme-img" style="--hue: 19" />
+
+      <img src="img/blueviolet.png" alt="" class="theme-img" style="--hue: 271" />
+
+      <img src="img/blue.png" alt="" class="theme-img" style="--hue: 225" />
+
+      <img src="img/magenta.png" alt="" class="theme-img" style="--hue: 339" />
+
+      <img src="img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80" />
+
+      <img src="img/red.png" alt="" class="theme-img" style="--hue: 4" />
+
+      <img src="img/yellow.png" alt="" class="theme-img" style="--hue: 42" />
+    </div>
+
+    <div class="switcher-close" id="switcher-close">&times;</div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
