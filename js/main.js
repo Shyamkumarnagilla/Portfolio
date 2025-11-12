@@ -1,9 +1,8 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navClose = document.getElementById('nav-close'),
     navToggle = document.getElementById('nav-toggle');
 
-/*===== MENU SHOW =====*/
+// Menu Show
 /* Validate if constant exists */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -11,15 +10,14 @@ if (navToggle) {
     });
 }
 
-/*===== MENU HIDDEN =====*/
+// Menu Hidden
 /* Validate if constant exists */
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     });
 }
-
-/*==================== STYLE SWITCHER ====================*/
+// Style Switcher
 const styleSwitcher = document.getElementById('style-switcher'),
     switcherToggle = document.getElementById('switcher-toggler'),
     switcherClose = document.getElementById('switcher-close');
@@ -32,7 +30,7 @@ switcherClose.addEventListener('click', () => {
     styleSwitcher.classList.remove('show-switcher');
 });
 
-/*==================== DARK LIGHT THEME ====================*/
+// Dark Light Theme
 window.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.getElementById('theme-toggler'),
         icon = document.getElementById('theme-icon');
@@ -59,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
         applyTheme(isDark ? 'light' : 'dark');
     });
 });
-/*==================== COLORS ====================*/
+// Colors
 const color = document.querySelectorAll('.theme-img');
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -79,10 +77,10 @@ color.forEach((color) => {
     };
 });
 
-document.addEventListener('mousemove', function(e) {
-  const cursor = document.querySelector('.custom-cursor');
-  if (cursor) {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  }
+document.addEventListener('mousemove', function (e) {
+    const cursor = document.querySelector('.custom-cursor');
+    if (cursor) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    }
 });

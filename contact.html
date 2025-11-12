@@ -5,17 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--=============== REMIXICON ===============-->
+  <!-- REMIXICON & CSS -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 
   <title>Shyam's Portfolio</title>
 </head>
 
 <body>
-  <!--=============== NAVBAR ===============-->
+  <!-- Navbar -->
   <nav class="nav">
     <div class="nav-menu" id="nav-menu">
       <ul class="nav-list grid">
@@ -49,25 +48,27 @@
       <i class="ri-menu-line"></i>
     </div>
   </nav>
-  <!--=============== MAIN ===============-->
+
   <main class="main">
-    <!--=============== CONTACT ===============-->
+    <!-- Contact -->
     <section class="contact section">
       <h2 class="section-title">Contact <span>Me</span></h2>
 
       <div class="contact-container container grid">
         <div class="contact-content grid">
-        <div class="contact-social-icons" style="display: flex; flex-direction: row; align-items: center; gap: 24px; margin-bottom: 24px;">
-          <a href="https://www.linkedin.com/in/nagilla-shyam-kumar" target="_blank" rel="noopener" title="LinkedIn" style="color: inherit;">
-            <i class="ri-linkedin-fill" style="font-size: 2rem;"></i>
-          </a>
-          <a href="https://github.com/Shyamkumarnagilla" target="_blank" rel="noopener" title="GitHub" style="color: inherit;">
-            <i class="ri-github-fill" style="font-size: 2rem;"></i>
-          </a>
-          <a href="mailto:nagillashyamkumar7@gmail.com" title="Email" style="color: inherit;">
-            <i class="ri-mail-line" style="font-size: 2rem;"></i>
-          </a>
-        </div>
+          <div class="contact-social-icons">
+            <a href="https://www.linkedin.com/in/nagilla-shyam" target="_blank" rel="noopener" title="LinkedIn"
+              style="color: inherit;">
+              <i class="ri-linkedin-fill" style="font-size: 2rem;"></i>
+            </a>
+            <a href="https://github.com/Shyamkumarnagilla" target="_blank" rel="noopener" title="GitHub"
+              style="color: inherit;">
+              <i class="ri-github-fill" style="font-size: 2rem;"></i>
+            </a>
+            <a href="mailto:nagillashyamkumar7@gmail.com" title="Email" style="color: inherit;">
+              <i class="ri-mail-line" style="font-size: 2rem;"></i>
+            </a>
+          </div>
           <div class="contact-card">
             <span class="contact-icon">
               <i class="ri-map-2-line"></i>
@@ -75,13 +76,24 @@
 
             <div>
               <h3 class="contact-title">Address</h3>
-              <p class="contact-data">Hyderabad, Telengana, India</p>
+              <p class="contact-data">Hyderabad, Telangana, India</p>
             </div>
           </div>
 
           <div class="contact-card">
             <span class="contact-icon">
-              <i class="ri-book-2-line"></i>
+              <i class="ri-user-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Open to Work</h3>
+              <p class="contact-data">Available Right Now</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-phone-line"></i>
             </span>
 
             <div>
@@ -140,24 +152,25 @@
   </main>
 
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <span class="footer-copy">© 2025 Shyam Kumar Nagilla.</span>
-      <div class="footer-center">
-        <nav class="footer-nav">
-          <a href="index.html">Home</a>
-          <span>|</span>
-          <a href="about.html">About Me</a>
-          <span>|</span>
-          <a href="contact.html">Contact ME</a>
-        </nav>
+      <div class="footer-main">
+        <span class="footer-copy">© 2025 Shyam Kumar Nagilla.<span class="footer-rights"> All rights are
+            reserved.</span></span>
       </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="about.html">About Me</a>
+        <span>|</span>
+        <a href="contact.html">Contact Me</a>
+      </nav>
     </div>
   </footer>
 
 
-  <!--=============== STYLE SWITCHER ===============-->
+  <!-- Style Switcher -->
   <div class="style-switcher" id="style-switcher">
     <div class="switcher-toggler" id="switcher-toggler">
       <i class="ri-settings-4-line"></i>
@@ -170,31 +183,29 @@
     <h3 class="switcher-title">Style Switcher</h3>
 
     <div class="switcher-items grid">
-      <img src="assets/img/orange.png" alt="" class="theme-img" style="--hue: 19" />
+      <img src="img/orange.png" alt="" class="theme-img" style="--hue: 19" />
 
-      <img src="assets/img/blueviolet.png" alt="" class="theme-img" style="--hue: 271" />
+      <img src="img/blueviolet.png" alt="" class="theme-img" style="--hue: 271" />
 
-      <img src="assets/img/blue.png" alt="" class="theme-img" style="--hue: 225" />
+      <img src="img/blue.png" alt="" class="theme-img" style="--hue: 225" />
 
-      <img src="assets/img/magenta.png" alt="" class="theme-img" style="--hue: 339" />
+      <img src="img/magenta.png" alt="" class="theme-img" style="--hue: 339" />
 
-      <img src="assets/img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80" />
+      <img src="img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80" />
 
-      <img src="assets/img/red.png" alt="" class="theme-img" style="--hue: 4" />
+      <img src="img/red.png" alt="" class="theme-img" style="--hue: 4" />
 
-      <img src="assets/img/yellow.png" alt="" class="theme-img" style="--hue: 42" />
+      <img src="img/yellow.png" alt="" class="theme-img" style="--hue: 42" />
     </div>
 
     <div class="switcher-close" id="switcher-close">&times;</div>
   </div>
-  <!--=============== EMAIL JS ===============-->
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
-  <!--=============== CONTACT JS ===============-->
-  <script src="assets/js/contact.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

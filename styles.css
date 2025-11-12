@@ -1,3 +1,32 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
+
+/* Center social icons in left part of contact page */
+.contact-content {
+  position: relative;
+}
+.contact-social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .contact-social-icons {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
 @media (min-width: 601px) {
   .home-content .button {
     margin-right: 16px;
@@ -11,12 +40,8 @@
     margin-bottom: 40px;
   }
 }
-/*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
   --hue: 271;
   --first-color: hsl(var(--hue), 76%, 53%);
   --title-color: hsl(var(--hue), 4%, 26%);
@@ -26,10 +51,8 @@
   --border-color: hsl(var(--hue), 4%, 91%);
   --white-color: hsl(var(--hue), 4%, 100%);
 
-  /*========== Font family ==========*/
   --body-font: 'Montserrat Alternates', sans-serif;
 
-  /*========== Font sizes ==========*/
   --h1-font-size: 3.5rem;
   --h2-font-size: 3rem;
   --h3-font-size: 1.5rem;
@@ -38,14 +61,12 @@
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
 
-  /*========== Font weight ==========*/
   --weight-500: 500;
   --weight-600: 600;
   --weight-700: 700;
   --weight-800: 800;
 }
 
-/* Responsive typography */
 @media screen and (max-width: 1208px) {
   :root {
   --h1-font-size: 2.25rem;
@@ -58,7 +79,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   margin: 0;
   padding: 0;
@@ -115,7 +135,6 @@ img {
   max-width: 100%;
 }
 
-/*=============== Variables Dark theme ===============*/
 .dark-theme {
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 80%);
@@ -123,11 +142,10 @@ img {
   --container-color: hsl(var(--hue), 4%, 12%);
   --border-color: hsl(var(--hue), 4%, 16%);
 }
-/*=============== REUSABLE CSS CLASSES ===============*/
 .button {
   display: inline-block;
   color: var(--title-color);
-  border: 1px solid var(--first-color);
+  border: 1.75px solid var(--first-color);
   padding: 1.25rem 4.5rem 1.25rem 2rem;
   border-radius: 2rem;
   font-size: var(--small-font-size);
@@ -135,6 +153,10 @@ img {
   position: relative;
   overflow: hidden;
   transition: color 0.3s;
+}
+
+.button-resume {
+  padding: 1.25rem 2.2rem 1.25rem 1.2rem;
 }
 
 .button:hover {
@@ -182,7 +204,6 @@ img {
   color: var(--first-color);
 }
 
-/*=============== LAYOUT ===============*/
 .grid {
   display: grid;
 }
@@ -193,7 +214,7 @@ img {
   padding-inline: 1.25rem;
 }
 
-/*=============== NAVBAR ===============*/
+/* Navbar */
 .nav {
   position: fixed;
   inset-block: 0;
@@ -264,13 +285,13 @@ img {
   display: none;
 }
 
-/*=============== HOME ===============*/
+/* Home */
 .home-container {
   grid-template-columns: 4.75fr 7.25fr;
   align-items: center;
   column-gap: clamp(2rem, -22.6531rem + 32.6531vw, 10rem);
   padding: 4rem;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .home-img {
@@ -279,7 +300,8 @@ img {
   object-fit: cover;
   border-radius: 2rem;
   z-index: 10;
-  border: 4px solid var(--first-color);
+  border: 2px solid var(--first-color);
+  background: var(--body-color);
 }
 
 .home-title {
@@ -318,7 +340,7 @@ img {
   left: -12%;
 }
 
-/*=============== ABOUT ===============*/
+/* About */
 .about-container {
   grid-template-columns: 4fr 8fr;
   align-items: start;
@@ -351,7 +373,7 @@ img {
   margin: 4.5rem auto;
 }
 
-/*========== Skills ==========*/
+/* Skills */
 .subtitle-center {
   text-align: center;
 }
@@ -401,7 +423,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/*========== Experience ==========*/
+/* Experience  */
 .resume-container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.75rem;
@@ -472,8 +494,8 @@ img {
   font-size: var(--small-font-size);
   padding-bottom: 20px;
 }
-/*=============== PORTFOLIO ===============*/
-.portfolio-container {
+/* Portfolio */
+ .portfolio-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
@@ -540,7 +562,7 @@ img {
   font-size: 1.25rem;
 }
 
-/*=============== CONTACT ===============*/
+/* Contact */
 .contact-container {
   grid-template-columns: 5fr 7fr;
   align-items: start;
@@ -647,43 +669,60 @@ img {
   color: var(--first-color);
 }
 
-/*========== Footer =========*/
+/* Footer */
 footer {
   background: var(--container-color);
   color: var(--text-secondary);
   font-size: 1.08rem;
-  padding: 32px 0 32px 0;
+  padding: 24px 0 24px 0;
   border-top: 1px solid rgba(255,255,255,0.05);
-  width: 99.2vw;
+  width: 100%;
+  max-width: 100%;
   left: 0;
   position: relative;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 .footer-content {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 16px;
   width: 100%;
-  padding: 0 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
   box-sizing: border-box;
+}
+
+
+.footer-main {
+  display: flex;
+  align-items: center;
 }
 
 .footer-copy {
   font-weight: 500;
   white-space: nowrap;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
-.footer-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.footer-rights {
+  display: inline;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-rights {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.98rem;
+    text-align: center;
+  }
+}
+
 
 .footer-nav {
   display: flex;
@@ -691,7 +730,15 @@ footer {
   gap: 12px;
   font-size: 1.08rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-nav {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer-nav a {
@@ -710,26 +757,40 @@ footer {
   font-size: 1.1em;
 }
 
-.footer-socials {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 6px;
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+  }
+  .footer-main {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-copy {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .footer-nav {
+    font-size: 0.98rem;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.footer-socials a {
-  color: var(--accent);
-  font-size: 1.3rem;
-  transition: color 0.2s;
-  text-decoration: none;
-}
-
-.footer-socials a:hover {
-  color: var(--accent-light);
-}
-
-
-/*=============== STYLE SWITCHER ===============*/
+/* Style Switcher */
 .style-switcher {
   position: fixed;
   top: 10%;
@@ -813,7 +874,6 @@ footer {
   cursor: pointer;
 }
 
-/*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
   .container {
@@ -996,7 +1056,6 @@ footer {
   }
 
   .about-container,
-  .stats,
   .skills-container,
   .resume-container,
   .portfolio-container,
@@ -1053,6 +1112,14 @@ footer {
   }
 }
 
+  .footer-rights {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.98rem;
+    text-align: center;
+  }
+
+
 /* For small devices */
 @media screen and (max-width: 540px) {
   .home-container,
@@ -1066,15 +1133,6 @@ footer {
   .contact-container,
   .portfolio-container {
     grid-template-columns: 1fr;
-  }
-
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-
-  .stats-box {
-    padding-inline: 1rem;
   }
 
   .contact-card {

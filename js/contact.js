@@ -1,4 +1,4 @@
-/*=============== EMAIL JS ===============*/
+// Email Js
 const contactForm = document.getElementById('contact-form'),
     contactName = document.getElementById('contact-name'),
     contactEmail = document.getElementById('contact-email'),
